@@ -3,6 +3,11 @@
   flex-direction: column;
   gap: 70px;
 
+  .btn-quantity-product:hover{
+    filter: brightness(101%);
+  }
+
+  
   .new-product{
     color: $orange;
   }
@@ -60,6 +65,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+
 
       button {
         height: 100%;

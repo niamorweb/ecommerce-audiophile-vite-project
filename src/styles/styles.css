@@ -937,6 +937,9 @@ footer .footer-container ul li:hover {
   flex-direction: column;
   gap: 70px;
 }
+.page-product .btn-quantity-product:hover {
+  filter: brightness(101%);
+}
 .page-product .new-product {
   color: #d87d4a;
 }

@@ -96,14 +96,14 @@ export default function PresentationProduct({
 
                   <div className="selector-quantity-and-add-to-cart">
                     <div className="selector-quantity">
-                      <button onClick={() => handleClickQuantityProduct(-1)}>
+                      <button className="btn-quantity-product" onClick={() => handleClickQuantityProduct(-1)}>
                         <img
                           src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-minus.svg"
                           alt=""
                         />
                       </button>
                       <span className="quantity">{quantityProduct}</span>
-                      <button onClick={() => handleClickQuantityProduct(1)}>
+                      <button  className="btn-quantity-product" onClick={() => handleClickQuantityProduct(1)}>
                         <img src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-plus.svg" alt="" />
                       </button>
                     </div>
