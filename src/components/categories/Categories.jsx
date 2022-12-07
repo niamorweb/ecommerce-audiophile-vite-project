@@ -10,7 +10,7 @@ export default function Categories() {
       <div className="box border-box">
         <img
           className="img-product"
-          src="../../../assets/images/shared/desktop/imageheadphones.png"
+          src="../../../ecommerce-audiophile-vite-project/assets/images/shared/desktop/imageheadphones.png"
           alt=""
         />
         <h5>HEADPHONES</h5>
@@ -18,7 +18,7 @@ export default function Categories() {
         <div className="shop-and-arrow">
             <p>Shop</p>
           <img
-            src="../../../assets/icons/little-arrow-down.svg"
+            src="../../../ecommerce-audiophile-vite-project/assets/icons/little-arrow-down.svg"
             alt=""
             className="arrow"
           />
@@ -29,7 +29,7 @@ export default function Categories() {
       <div className="box border-box">
         <img
           className="img-product"
-          src="../../../assets/images/shared/desktop/imagespeakers.png"
+          src="../../../ecommerce-audiophile-vite-project/assets/images/shared/desktop/imagespeakers.png"
           alt=""
         />
         <h5>speakers</h5>
@@ -37,7 +37,7 @@ export default function Categories() {
         <div className="shop-and-arrow">
             <p>Shop</p>
           <img
-            src="../../../assets/icons/little-arrow-down.svg"
+            src="../../../ecommerce-audiophile-vite-project/assets/icons/little-arrow-down.svg"
             alt=""
             className="arrow"
           />
@@ -48,7 +48,7 @@ export default function Categories() {
       <div className="box border-box">
         <img
           className="img-product"
-          src="../../../assets/images/shared/desktop/imageearphones.png"
+          src="../../../ecommerce-audiophile-vite-project/assets/images/shared/desktop/imageearphones.png"
           alt=""
         />
         <h5>earphones</h5>
@@ -56,7 +56,7 @@ export default function Categories() {
         <div className="shop-and-arrow">
             <p>Shop</p>
           <img
-            src="../../../assets/icons/little-arrow-down.svg"
+            src="../../../ecommerce-audiophile-vite-project/assets/icons/little-arrow-down.svg"
             alt=""
             className="arrow"
           />

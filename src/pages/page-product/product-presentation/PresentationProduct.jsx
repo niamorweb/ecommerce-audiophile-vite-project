@@ -98,13 +98,13 @@ export default function PresentationProduct({
                     <div className="selector-quantity">
                       <button onClick={() => handleClickQuantityProduct(-1)}>
                         <img
-                          src="../../../assets/icons/icon-minus.svg"
+                          src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-minus.svg"
                           alt=""
                         />
                       </button>
                       <span className="quantity">{quantityProduct}</span>
                       <button onClick={() => handleClickQuantityProduct(1)}>
-                        <img src="../../../assets/icons/icon-plus.svg" alt="" />
+                        <img src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-plus.svg" alt="" />
                       </button>
                     </div>
                     <button

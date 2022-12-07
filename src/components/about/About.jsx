@@ -5,17 +5,17 @@ export default function About() {
     <div className="outro">
       <img
         className="border-box mobile"
-        src="../../../assets/images/shared/mobile/mobilegear.jpg"
+        src="../../../ecommerce-audiophile-vite-project/assets/images/shared/mobile/mobilegear.jpg"
         alt=""
       />
       <img
         className="border-box tablet"
-        src="../../../assets/images/shared/tablet/tabgear.jpg"
+        src="../../../ecommerce-audiophile-vite-project/assets/images/shared/tablet/tabgear.jpg"
         alt=""
       />
       <img
         className="border-box desktop"
-        src="../../../assets/images/shared/desktop/gearimage.jpg"
+        src="../../../ecommerce-audiophile-vite-project/assets/images/shared/desktop/gearimage.jpg"
         alt=""
       />
       <div className="txt">

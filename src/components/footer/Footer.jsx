@@ -37,9 +37,9 @@ export default function Footer() {
           <span className="copyright">Copyright 2021. </span>
 
           <div className="social-links">
-            <img src="../../../assets/icons/icon-facebook.svg" alt="" />
-            <img src="../../../assets/icons/icon-twitter.svg" alt="" />
-            <img src="../../../assets/icons/icon-instagram.svg" alt="" />
+            <img src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-facebook.svg" alt="" />
+            <img src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-twitter.svg" alt="" />
+            <img src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-instagram.svg" alt="" />
           </div>
         </div>
       </div>

@@ -13,9 +13,9 @@ export default function Section1( {slide} ) {
 
   return (
     <div id="homeSection1" className="product-home1 border-box">
-                <img className="mobile" src="../../../assets/images/home/mobile/image-speaker-zx9.png" alt=""/>
-                <img className="tablet" src="../../../assets/images/home/tablet/tabspeaker.png" alt=""/>
-                <img className="desktop" src="../../../assets/images/home/desktop/speakerzx.png" alt=""/>
+                <img className="mobile" src="../../../ecommerce-audiophile-vite-project/assets/images/home/mobile/image-speaker-zx9.png" alt=""/>
+                <img className="tablet" src="../../../ecommerce-audiophile-vite-project/assets/images/home/tablet/tabspeaker.png" alt=""/>
+                <img className="desktop" src="../../../ecommerce-audiophile-vite-project/assets/images/home/desktop/speakerzx.png" alt=""/>
                 <div className="txt">
                 <h2>ZX9 SPEAKER</h2>
                 <p>Upgrade to premium speakers that are phenomenally built to 

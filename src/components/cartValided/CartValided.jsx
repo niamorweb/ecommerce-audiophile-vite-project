@@ -16,7 +16,7 @@ export default function CartValided({productCart, grandTotalPrice, setProductCar
      <div className="backgroundOpacity"></div>
     <div className="cart-valided">
     <div className="container">
-      <img src="../assets/icons/icon-check-mark.svg" alt="" />
+      <img src="../ecommerce-audiophile-vite-project/assets/icons/icon-check-mark.svg" alt="" />
       <h1>THANK YOU FOR YOUR ORDER</h1>
       <p>You will receive an email confirmation shortly.</p>
     <div className="recapitulatif">

@@ -13,12 +13,12 @@ export default function Section3( { slide } ) {
       <div id="left" className="left">
         <img
           className="border-box mobile-tablet"
-          src="../../../assets/images/home/mobile/image-earphones-yx1.jpg"
+          src="../../../ecommerce-audiophile-vite-project/assets/images/home/mobile/image-earphones-yx1.jpg"
           alt=""
         />
         <img
           className="border-box desktop"
-          src="../../../assets/images/home/mobile/image-earphones-yx1.jpg"
+          src="../../../ecommerce-audiophile-vite-project/assets/images/home/mobile/image-earphones-yx1.jpg"
           alt=""
         />
       </div>

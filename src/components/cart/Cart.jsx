@@ -84,7 +84,7 @@ export default function Cart({
       <div className="cart">
         <div className="container-cart">
           <span>Your cart is empty</span>
-          <img src="../../assets/icons/icon-cart-black.svg" alt="" />
+          <img src="../../ecommerce-audiophile-vite-project/assets/icons/icon-cart-black.svg" alt="" />
         </div>
       </div>
     );
@@ -118,7 +118,7 @@ export default function Cart({
                           handleAddQuantityFromCart(product.id, -1)
                         }
                       >
-                        <img src="../../assets/icons/icon-minus.svg" alt="" />
+                        <img src="../../ecommerce-audiophile-vite-project/assets/icons/icon-minus.svg" alt="" />
                       </button>
                       <span className="quantity-product">
                         {product.quantity}
@@ -126,12 +126,12 @@ export default function Cart({
                       <button
                         onClick={() => handleAddQuantityFromCart(product.id, 1)}
                       >
-                        <img src="../../assets/icons/icon-plus.svg" alt="" />
+                        <img src="../../ecommerce-audiophile-vite-project/assets/icons/icon-plus.svg" alt="" />
                       </button>
                     </div>
                     <img
                       onClick={() => handleDelete(product.id)}
-                      src="../../assets/icons/icon-delete.svg"
+                      src="../../ecommerce-audiophile-vite-project/assets/icons/icon-delete.svg"
                       alt=""
                       className="delete-item-cart"
                     />

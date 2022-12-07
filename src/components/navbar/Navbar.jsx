@@ -49,7 +49,7 @@ export default function Navbar({
             </NavLink>
           </ul>
           <div className="nav-cart" onClick={() => handleCartDisplay()}>
-            <img src="../../assets/icons/icon-cart.svg" alt="" />
+            <img src="../../ecommerce-audiophile-vite-project/assets/icons/icon-cart.svg" alt="" />
             {quantityCartItem === 0 ? null : (
               <span className="nav-quantity-item-cart">{quantityCartItem}</span>
             )}

@@ -10,9 +10,9 @@ export default function Section2( { slide } ) {
 
   return (
     <div id="homeSection2" className="product-home2 border-box">
-                <img className="mobile" src="../../../assets/images/home/mobile/image-speaker-zx7.jpg" alt=""/>
-                <img className="tablet" src="../../../assets/images/home/tablet/image-speaker-zx7.jpg" alt=""/>
-                <img className="desktop" src="../../../assets/images/home/desktop/image-speaker-zx7.jpg" alt=""/>
+                <img className="mobile" src="../../../ecommerce-audiophile-vite-project/assets/images/home/mobile/image-speaker-zx7.jpg" alt=""/>
+                <img className="tablet" src="../../../ecommerce-audiophile-vite-project/assets/images/home/tablet/image-speaker-zx7.jpg" alt=""/>
+                <img className="desktop" src="../../../ecommerce-audiophile-vite-project/assets/images/home/desktop/image-speaker-zx7.jpg" alt=""/>
                 <div className="txt">
                 <h2>ZX7 SPEAKER</h2>
                <NavLink to='/ecommerce-audiophile-vite-project/product/zx7-speaker'> <button>see product</button></NavLink>
