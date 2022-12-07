@@ -1,0 +1,47 @@
+.product-home2 {
+  margin-top: 30px;
+  position: relative;
+  background-color: $lightGrey;
+  overflow: hidden;
+  z-index: 1;
+
+  img {
+    width: 100%;
+    z-index: -2;
+  }
+
+  .txt {
+    position: absolute;
+    z-index: 4;
+    top: 80px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  button {
+    width: 200px;
+    padding: 15px 30px;
+    color: $black;
+    border: 1px solid $black;
+    background-color: $lightGrey;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 600px) {
+  .product-home2 {
+    margin-top: 30px;
+    position: relative;
+    background-color: $lightGrey;
+  }
+}
+
+@media (min-width: 1000px) {
+  .product-home2 {
+    margin-top: 30px;
+    position: relative;
+    background-color: $lightGrey;
+  }
+}

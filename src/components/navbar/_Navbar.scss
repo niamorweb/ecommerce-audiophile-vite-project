@@ -1,0 +1,134 @@
+header {
+  background-color: $black2;
+  z-index: 3;
+
+  .nav-mobile {
+    position: absolute;
+    background-color: $white;
+    margin: auto;
+    z-index: 3;
+    width: 100vw;
+    padding: 70px 30px 30px 30px;
+    transform: translateY(-250%);
+    animation: animTranslate 1s forwards;
+  }
+
+  .link{
+    color: $white;
+  }
+
+
+
+  .icon-nav-mobile {
+    z-index: 3;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-bottom: 1px solid gray;
+    padding: 15px 25px;
+    max-width: 1120px;
+    margin: auto;
+    background-color: $black2;
+    z-index: 3;
+
+    .nav-cart {
+      z-index: 10;
+      position: relative;
+      cursor: pointer;
+
+      .nav-quantity-item-cart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%);
+        background-color: $orange;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: $white;
+        font-size: 1rem;
+      }
+    }
+
+    img {
+      width: 25px;
+    }
+
+    .brand {
+      font-size: 30px;
+      font-weight: bolder;
+      color: $white;
+      transition: 0.3s;
+      z-index: 3;
+      position: relative;
+    }
+  }
+}
+
+
+
+@keyframes animTranslate {
+  to{
+    transform: translate(0);
+  }
+}
+
+
+@media (min-width: 600px) {
+  nav {
+    .brand {
+      margin-right: 250px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  header {
+    nav {
+      .icon-nav-mobile {
+        display: none;
+      }
+
+      .brand {
+        margin-right: 0;
+      }
+
+      .nav-desktop {
+        display: flex !important;
+        gap: 25px;
+        align-items: center;
+        z-index: 11;
+
+        li {
+          text-transform: uppercase;
+          font-weight: 500;
+          transition: 0.3s;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+.nav-active{
+  color: $orange !important;
+}

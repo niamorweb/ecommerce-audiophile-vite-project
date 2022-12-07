@@ -1,0 +1,40 @@
+.outro {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+
+  .text {
+    padding: 0 40px 0 40px;
+  }
+  h4 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  span {
+    color: $orange;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $grey;
+  }
+}
+
+@media (min-width: 1000px) {
+  .outro {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+    gap: 40px;
+    justify-content: center;
+  }
+}

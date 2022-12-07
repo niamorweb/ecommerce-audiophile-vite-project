@@ -1,0 +1,138 @@
+footer {
+  background-color: $black;
+  position: relative;
+  z-index: 1;
+
+  .link {
+    color: $white;
+  }
+
+
+  .footer-container {
+    max-width: 1120px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 80px 30px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 130px;
+      height: 4px;
+      background-color: $orange;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: 0.5s;
+    }
+
+    .title-and-links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .copy-and-social-links {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      img {
+        width: 20px;
+      }
+    }
+
+    .brand {
+      font-size: 25px;
+      font-weight: bolder;
+      color: $white;
+    }
+    p {
+      color: $grey;
+      max-width: 500px;
+    }
+
+    .copyright {
+      color: $grey;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      li {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: 0.3s;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .footer-container {
+    text-align: left !important;
+    gap: 40px;
+
+    &::before {
+      width: 130px;
+      height: 4px;
+      top: 0;
+      left: 30px;
+      transform: translateX(0);
+    }
+
+    ul {
+      flex-direction: row !important;
+      gap: 40px !important;
+    }
+
+    .copy-and-social-links {
+      flex-direction: row !important;
+      justify-content: space-between;
+      gap: 20px;
+
+      .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer-container {
+    text-align: left !important;
+    gap: 40px;
+    padding: 50px;
+
+    .title-and-links {
+      flex-direction: row !important;
+      justify-content: space-between;
+      gap: 20px;
+    }
+  }
+}
+.nav-active {
+  color: $orange !important;
+}

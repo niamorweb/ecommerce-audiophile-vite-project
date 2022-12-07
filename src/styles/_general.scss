@@ -1,0 +1,166 @@
+// imports fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$orange: #d87d4a;
+$brown: #633d3d;
+$lightGrey: #f1f1f1;
+$grey: #8e8e8e;
+$white2: #fafafa;
+$black: #272727;
+$white: #fff;
+$black2: #191919;
+
+* {
+  margin: 0%;
+  padding: 0%;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 38px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h3 {
+}
+
+h4 {
+  font-size: 23px;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 13px;
+  line-height: 25px;
+}
+
+a {
+}
+
+
+.backgroundOpacity {
+  z-index: 2;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.650);
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out 0s;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  max-width: 200px;
+  padding: 10px 25px;
+  border-radius: 3px;
+
+  &:hover{
+    filter: brightness(105%);
+  }
+}
+
+.btn-style1 {
+  background-color: #d87d4a;
+  color: $white;
+}
+
+.btn-style2 {
+  background-color: $black2;
+  color: $white;
+}
+
+.btn-style2 {
+  background-color: $lightGrey;
+  color: $black;
+}
+
+.border-box {
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.tablet {
+  display: none;
+}
+
+main {
+  margin: auto;
+  width: 84%;
+  max-width: 1100px;
+}
+
+.orange{
+  color: $orange;
+}
+
+.links {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .tablet {
+    display: block !important;
+  }
+
+  .desktop {
+    display: none !important ;
+  }
+  main {
+    margin-top: 80px;
+    width: 95%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .mobile {
+    display: none !important;
+  }
+
+  .desktop {
+    display: block !important ;
+  }
+
+  .tablet {
+    display: none !important;
+  }
+
+  .mobile-tablet {
+    display: none;
+  }
+}

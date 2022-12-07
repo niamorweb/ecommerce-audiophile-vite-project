@@ -1,0 +1,107 @@
+.intro {
+  background-color: $black2;
+  position: relative;
+  z-index: 1;
+
+  .container-intro {
+    background: url(../../public/assets/images/home/mobile/image-header.jpg)
+      no-repeat !important;
+    padding: 100px 40px 400px 40px;
+    background-size: 100% !important;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1120px;
+
+    .txt {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .new-product {
+      color: gray;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    p {
+      color: white;
+    }
+
+    button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .intro {
+    .container-intro {
+      background: url(../../public/assets/images/home/tablet/image-header.jpg)
+        no-repeat !important;
+      padding: 150px 40px 400px 40px !important;
+      background-size: 100% !important;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    .container-intro {
+      position: relative;
+      background: url(../../public/assets/images/home/desktop/image-hero.jpg)
+        no-repeat !important;
+      padding: 250px 40px 140px 30px !important;
+      background-size: 100% !important;
+      margin-bottom: 30px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      &::before {
+        z-index: -5;
+        position: absolute;
+        background-color: #191919;
+        content: "";
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      .txt {
+        text-align: left;
+        gap: 25px;
+        width: 500px;
+      }
+
+      .new-product {
+        color: gray;
+        text-transform: uppercase;
+        letter-spacing: 8px;
+      }
+
+      h1 {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+
+      button {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+}
