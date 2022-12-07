@@ -70,7 +70,7 @@ export default function PresentationProduct({
         </div>
       )}
 
-      <NavLink className="links" to="ecommerce-audiophile-vite-project/home">
+      <NavLink className="links" to="/ecommerce-audiophile-vite-project/">
         <h4 className="go-back">Go Back</h4>
       </NavLink>
 

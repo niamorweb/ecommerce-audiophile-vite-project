@@ -27,24 +27,34 @@ export default function Navbar({
     setBackgroundOpacity(!backgroundOpacity)
   };
 
+
+  const checkActive = (match, location) => {
+    //some additional logic to verify you are in the home URI
+    if(!location) return false;
+    const {pathname} = location;
+    console.log(pathname);
+    return pathname === "/";
+}
+
+
   return (
     <>
     {backgroundOpacity? <div className="backgroundOpacity mobile-tablet"></div> : null}
       <header>
         <nav>
           <img onClick={handleDisplayMobileNav} className="icon-nav-mobile" src="assets/icons/menu.svg" alt="" />
-          <NavLink to="/ecommerce-audiophile-vite-project/home"><span className="brand">audiophile</span></NavLink>
+          <NavLink to="/ecommerce-audiophile-vite-project/"><span className="brand">audiophile</span></NavLink>
           <ul className="nav-desktop desktop">
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/home">
+            <NavLink end className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project">
               <li >home</li>
             </NavLink>
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/headphones">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/category/headphones">
               <li>headphones</li>
             </NavLink>
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/speakers">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/category/speakers">
               <li>speakers</li>
             </NavLink>
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/earphones">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/category/earphones">
               <li>earphones</li>
             </NavLink>
           </ul>

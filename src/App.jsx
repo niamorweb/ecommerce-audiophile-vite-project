@@ -43,10 +43,10 @@ function App() {
         setCartTotalPrice={setCartTotalPrice}
       />
       <Routes>
-        <Route path="ecommerce-audiophile-vite-project/home" element={<Home dataProduct={dataProduct} />} />
+        <Route exact path="ecommerce-audiophile-vite-project/"  element={<Home dataProduct={dataProduct} />} />
 
         <Route
-          path="ecommerce-audiophile-vite-project/:NameCategory"
+          path="ecommerce-audiophile-vite-project/category/:NameCategory"
           element={<Category dataProduct={dataProduct} />}
         />
 

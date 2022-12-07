@@ -8,19 +8,19 @@ export default function Footer() {
         <div className="title-and-links">
           <span className="brand">audiophile</span>
           <ul>
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/home">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} end to="/ecommerce-audiophile-vite-project/">
               <li>home</li>
             </NavLink>
 
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/headphones">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/category/headphones">
               <li>headphones</li>
             </NavLink>
 
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/speakers">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/category/speakers">
               <li>speakers</li>
             </NavLink>
 
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/earphones">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/category/earphones">
               <li>earphones</li>
             </NavLink>
           </ul>
