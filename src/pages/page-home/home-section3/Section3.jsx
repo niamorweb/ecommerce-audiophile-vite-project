@@ -24,7 +24,7 @@ export default function Section3( { slide } ) {
       </div>
       <div id="right" className="right border-box">
         <h2>Yx1 earphones</h2>
-        <NavLink to="/product/yx1-earphones">
+        <NavLink to="/ecommerce-audiophile-vite-project/product/yx1-earphones">
           {" "}
           <button>see product</button>
         </NavLink>

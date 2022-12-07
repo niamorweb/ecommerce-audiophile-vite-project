@@ -20,7 +20,7 @@ export default function Section1( {slide} ) {
                 <h2>ZX9 SPEAKER</h2>
                 <p>Upgrade to premium speakers that are phenomenally built to 
                     deliver truly remarkable sound. </p>
-               <NavLink to='/product/zx9-speaker'> <button>see product</button></NavLink>
+               <NavLink to='/ecommerce-audiophile-vite-project/product/zx9-speaker'> <button>see product</button></NavLink>
             </div>
             </div>
   );

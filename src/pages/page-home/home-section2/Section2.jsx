@@ -15,7 +15,7 @@ export default function Section2( { slide } ) {
                 <img className="desktop" src="../../../assets/images/home/desktop/image-speaker-zx7.jpg" alt=""/>
                 <div className="txt">
                 <h2>ZX7 SPEAKER</h2>
-               <NavLink to='/product/zx7-speaker'> <button>see product</button></NavLink>
+               <NavLink to='/ecommerce-audiophile-vite-project/product/zx7-speaker'> <button>see product</button></NavLink>
             </div>
         </div>
   );

@@ -33,18 +33,18 @@ export default function Navbar({
       <header>
         <nav>
           <img onClick={handleDisplayMobileNav} className="icon-nav-mobile" src="assets/icons/menu.svg" alt="" />
-          <NavLink to="/"><span className="brand">audiophile</span></NavLink>
+          <NavLink to="/ecommerce-audiophile-vite-project/home"><span className="brand">audiophile</span></NavLink>
           <ul className="nav-desktop desktop">
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/home">
               <li >home</li>
             </NavLink>
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/headphones">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/headphones">
               <li>headphones</li>
             </NavLink>
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/speakers">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/speakers">
               <li>speakers</li>
             </NavLink>
-            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/earphones">
+            <NavLink className={(nav) => (nav.isActive ? "nav-active": 'link')} to="/ecommerce-audiophile-vite-project/earphones">
               <li>earphones</li>
             </NavLink>
           </ul>

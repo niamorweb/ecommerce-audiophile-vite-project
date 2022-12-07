@@ -28,7 +28,7 @@ export default  function CatgoryProducts( {NameCategory, dataProduct} ){
            <p className="description-product">
            {data.description}
            </p>
-           <NavLink to={'/product/' + data.slug} > <button className="btn-style1">SEE PRODUCT</button> </NavLink>
+           <NavLink to={'/ecommerce-audiophile-vite-project/product/' + data.slug} > <button className="btn-style1">SEE PRODUCT</button> </NavLink>
        </div>
        </div>
           )}

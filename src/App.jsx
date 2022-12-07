@@ -43,15 +43,15 @@ function App() {
         setCartTotalPrice={setCartTotalPrice}
       />
       <Routes>
-        <Route path="/" element={<Home dataProduct={dataProduct} />} />
+        <Route path="ecommerce-audiophile-vite-project/home" element={<Home dataProduct={dataProduct} />} />
 
         <Route
-          path="/:NameCategory"
+          path="ecommerce-audiophile-vite-project/:NameCategory"
           element={<Category dataProduct={dataProduct} />}
         />
 
         <Route
-          path="/product/:SlugProduct"
+          path="ecommerce-audiophile-vite-project/product/:SlugProduct"
           element={
             <Product
               dataProduct={dataProduct}
@@ -65,7 +65,7 @@ function App() {
           }
         />
         <Route
-          path="/checkout"
+          path="ecommerce-audiophile-vite-project/checkout"
           element={
             <Form
               productCart={productCart}

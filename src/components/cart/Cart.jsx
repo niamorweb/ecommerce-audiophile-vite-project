@@ -145,7 +145,7 @@ export default function Cart({
             <div className="price-total">${cartTotalPrice}</div>
           </div>
 
-          <NavLink to='/checkout'> <button onClick={() => setOpenCart(false)} className="btn-style1">CHECKOUT</button></NavLink>
+          <NavLink to='/ecommerce-audiophile-vite-project/checkout'> <button onClick={() => setOpenCart(false)} className="btn-style1">CHECKOUT</button></NavLink>
         </div>
       </div>
     );

@@ -20,7 +20,7 @@ export default function MayAlsoLike({item}) {
             alt=""
           />
           <h2>{item.name}</h2>
-          <NavLink className="links" to={"/product/"+ item.slug }>
+          <NavLink className="links" to={"/ecommerce-audiophile-vite-project/product/"+ item.slug }>
             <button className="btn-style1">SEE PRODUCT</button>
           </NavLink>
         </div>

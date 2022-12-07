@@ -26,7 +26,7 @@ export default function IntroHeader({slide}) {
             <p>Experience natural, lifelike audio and exceptional
                 build quality made for the passionate music
                 enthusiast.</p>
-               <NavLink to='/product/xx99-mark-two-headphones'> <button className="btn-style1">see product</button></NavLink>
+               <NavLink to='/ecommerce-audiophile-vite-project/product/xx99-mark-two-headphones'> <button className="btn-style1">see product</button></NavLink>
         </div>   
     </div>
     </section>

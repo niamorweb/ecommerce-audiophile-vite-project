@@ -41,7 +41,7 @@ export default function CartValided({productCart, grandTotalPrice, setProductCar
       <span className="price-grand-total">${grandTotalPrice}</span>
     </div>
     </div>
-    <NavLink to='/'><button onClick={reset} className="btn-style1">BACK TO HOME</button></NavLink>
+    <NavLink to='/ecommerce-audiophile-vite-project/home'><button onClick={reset} className="btn-style1">BACK TO HOME</button></NavLink>
     </div>
   </div>
   </>
