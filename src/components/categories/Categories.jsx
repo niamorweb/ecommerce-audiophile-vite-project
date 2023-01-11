@@ -14,7 +14,7 @@ export default function Categories() {
           alt=""
         />
         <h5>HEADPHONES</h5>
-          <NavLink  to="/ecommerce-audiophile-vite-project/headphones">
+          <NavLink  to="/ecommerce-audiophile-vite-project/category/headphones">
         <div className="shop-and-arrow">
             <p>Shop</p>
           <img
@@ -33,7 +33,7 @@ export default function Categories() {
           alt=""
         />
         <h5>speakers</h5>
-          <NavLink to="/ecommerce-audiophile-vite-project/speakers">
+          <NavLink to="/ecommerce-audiophile-vite-project/category/speakers">
         <div className="shop-and-arrow">
             <p>Shop</p>
           <img
@@ -52,7 +52,7 @@ export default function Categories() {
           alt=""
         />
         <h5>earphones</h5>
-          <NavLink to="/ecommerce-audiophile-vite-project/earphones">
+          <NavLink to="/ecommerce-audiophile-vite-project/category/earphones">
         <div className="shop-and-arrow">
             <p>Shop</p>
           <img
