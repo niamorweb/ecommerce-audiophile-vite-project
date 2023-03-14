@@ -59,14 +59,17 @@ button {
   max-width: 200px;
   padding: 10px 25px;
   border-radius: 3px;
-}
-button:hover {
-  filter: brightness(105%);
+  transition: 0.3s;
 }
 
 .btn-style1 {
   background-color: #d87d4a;
   color: #fff;
+}
+.btn-style1:hover {
+  outline: 2px solid #d87d4a;
+  background-color: transparent;
+  color: #d87d4a;
 }
 
 .btn-style2 {
@@ -74,7 +77,7 @@ button:hover {
   color: #fff;
 }
 
-.btn-style2 {
+.btn-style3 {
   background-color: #f1f1f1;
   color: #272727;
 }
@@ -419,6 +422,12 @@ footer .footer-container ul li:hover {
   width: 90%;
   margin: auto;
   z-index: 1;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.categories .box:hover {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2352941176);
 }
 .categories .box .img-product {
   position: absolute;
@@ -502,7 +511,7 @@ footer .footer-container ul li:hover {
   gap: 20px;
   padding-right: 30px;
   max-height: 200px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .cart .container-cart img {
   width: 60px;
@@ -849,6 +858,9 @@ footer .footer-container ul li:hover {
   flex-direction: column;
   gap: 100px;
 }
+.main-category__container_categories {
+  margin: 5rem 0;
+}
 
 .intro-category {
   background-color: #191919;
@@ -931,6 +943,10 @@ footer .footer-container ul li:hover {
   flex-direction: column;
   gap: 100px;
 }
+.main-product__container_categories {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
 
 .page-product {
   display: flex;
@@ -965,6 +981,7 @@ footer .footer-container ul li:hover {
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
+  z-index: 10;
 }
 .page-product .presentation-product {
   display: flex;
@@ -996,7 +1013,7 @@ footer .footer-container ul li:hover {
   width: 40%;
 }
 .page-product .selector-quantity-and-add-to-cart .selector-quantity img {
-  width: 20px;
+  width: 30px;
 }
 
 .feature-and-in-the-box {
@@ -1059,12 +1076,23 @@ footer .footer-container ul li:hover {
   }
 }
 .may-also-like {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
   padding: 2rem;
+  margin-top: 5rem;
+}
+.may-also-like .slick-arrow {
+  box-shadow: 3;
+  padding: 1rem 2rem;
+  display: flex !important;
+  justify-content: center;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1294117647);
+  align-items: center;
+  z-index: 3;
+  background-color: white;
+}
+.may-also-like .slick-arrow::before {
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
 }
 .may-also-like .all-box-item {
   display: flex;
@@ -1079,6 +1107,8 @@ footer .footer-container ul li:hover {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 .may-also-like .box-item img {
   max-width: 100%;

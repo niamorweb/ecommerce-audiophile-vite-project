@@ -1,10 +1,12 @@
-
 .main-category {
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  &__container_categories {
+    margin: 5rem 0;
   }
-  
-  
-  @import 'category-intro/intro-category';
-@import 'category-products/category-products';
+}
+
+@import "category-intro/intro-category";
+@import "category-products/category-products";

@@ -3,9 +3,8 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  gap:3rem;
+  gap: 3rem;
   z-index: 1;
-
 
   .box {
     position: relative;
@@ -14,6 +13,13 @@
     width: 90%;
     margin: auto;
     z-index: 1;
+    box-shadow: 3px 3px 3px #00000029;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: 3px 3px 3px #0000003c;
+    }
 
     .img-product {
       position: absolute;
@@ -50,7 +56,7 @@
     margin: auto;
     display: flex;
     flex-direction: row;
-    gap:1.5rem;
+    gap: 1.5rem;
 
     .box {
       width: 33% !important;

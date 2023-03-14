@@ -3,6 +3,9 @@ import { Link, NavLink, useParams } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import ProductGallery from "../product-gallery/ProductGallery";
 import MayAlsoLike from "../product-mayAlsoLike/MayAlsoLike";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function PresentationProduct({
   dataProduct,
@@ -16,6 +19,32 @@ export default function PresentationProduct({
 }) {
   const [alertItemAdded, setAlertItemAdded] = useState("");
 
+  var settings = {
+    dots: true,
+    arrows: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
+  };
   const handleClickQuantityProduct = (e) => {
     setQuantityProduct(quantityProduct + e);
     if (quantityProduct <= 1 && e === -1) {
@@ -96,15 +125,24 @@ export default function PresentationProduct({
 
                   <div className="selector-quantity-and-add-to-cart">
                     <div className="selector-quantity">
-                      <button className="btn-quantity-product" onClick={() => handleClickQuantityProduct(-1)}>
+                      <button
+                        className="btn-quantity-product"
+                        onClick={() => handleClickQuantityProduct(-1)}
+                      >
                         <img
                           src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-minus.svg"
                           alt=""
                         />
                       </button>
                       <span className="quantity">{quantityProduct}</span>
-                      <button  className="btn-quantity-product" onClick={() => handleClickQuantityProduct(1)}>
-                        <img src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-plus.svg" alt="" />
+                      <button
+                        className="btn-quantity-product"
+                        onClick={() => handleClickQuantityProduct(1)}
+                      >
+                        <img
+                          src="../../../ecommerce-audiophile-vite-project/assets/icons/icon-plus.svg"
+                          alt=""
+                        />
                       </button>
                     </div>
                     <button
@@ -129,7 +167,9 @@ export default function PresentationProduct({
                     {data.includedItems.map((included) => {
                       return (
                         <ul key={uuidv4()}>
-                          <li className="quantity-item">{included.quantity}x</li>
+                          <li className="quantity-item">
+                            {included.quantity}x
+                          </li>
                           <li>{included.item}</li>
                         </ul>
                       );
@@ -142,12 +182,14 @@ export default function PresentationProduct({
 
               <section className="may-also-like">
                 <h2>MAY ALSO LIKE</h2>
-                <div className="all-box-item">
-                  {data.others.map((item) => {
-                    return <MayAlsoLike item={item} />
-
-                  })}
-                </div>
+                <Slider {...settings}>
+                  {dataProduct
+                    .slice(0, 6)
+                    .filter((x) => x.id != data.id)
+                    .map((item) => (
+                      <MayAlsoLike item={item} />
+                    ))}
+                </Slider>
               </section>
             </>
           );

@@ -8,9 +8,6 @@ import { useParams } from "react-router-dom";
 export default function Category({ dataProduct }) {
   const { NameCategory } = useParams();
 
-
-
-
   return (
     <>
       <IntroCategory dataProduct={dataProduct} NameCategory={NameCategory} />
@@ -20,7 +17,9 @@ export default function Category({ dataProduct }) {
           dataProduct={dataProduct}
           NameCategory={NameCategory}
         />
-        <Categories />
+        <div className="main-category__container_categories">
+          <Categories />
+        </div>
         <About />
       </main>
     </>

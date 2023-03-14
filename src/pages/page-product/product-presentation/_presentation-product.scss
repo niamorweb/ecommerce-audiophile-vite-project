@@ -3,28 +3,27 @@
   flex-direction: column;
   gap: 70px;
 
-  .btn-quantity-product:hover{
+  .btn-quantity-product:hover {
     filter: brightness(101%);
   }
 
-  
-  .new-product{
+  .new-product {
     color: $orange;
   }
 
-  .feature{
+  .feature {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
 
-  .quantity-item{
+  .quantity-item {
     color: $orange;
     font-weight: 500;
     font-size: 1rem;
   }
 
-  .go-back{
+  .go-back {
     font-weight: 300;
     font-size: 1rem;
   }
@@ -37,6 +36,7 @@
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
+    z-index: 10;
   }
   .presentation-product {
     display: flex;
@@ -66,13 +66,12 @@
       align-items: center;
       justify-content: space-between;
 
-
       button {
         height: 100%;
         width: 40%;
       }
       img {
-        width: 20px;
+        width: 30px;
       }
     }
   }

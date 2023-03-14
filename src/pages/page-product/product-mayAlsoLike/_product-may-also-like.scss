@@ -1,101 +1,85 @@
-.may-also-like{
+.may-also-like {
+  padding: 2rem;
+  margin-top: 5rem;
+
+  .slick-arrow {
+    box-shadow: 3;
+    padding: 1rem 2rem;
+    display: flex !important;
+    justify-content: center;
+    box-shadow: 3px 3px 3px #00000021;
+    align-items: center;
+    z-index: 3;
+    background-color: white;
+
+    &::before {
+      color: black;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-size: 1.5rem;
+    }
+  }
+  .slick-next {
+  }
+
+  .all-box-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    padding: 2rem;
+  }
 
+  .box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
 
-    .all-box-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 3rem;
-
+    img {
+      max-width: 100%;
     }
+  }
 
+  .mobile-other {
+  }
 
-    .box-item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
+  .tablet-other {
+    display: none;
+  }
 
-        img{
-            max-width: 100%;
-        }
-    }
-
-    .mobile-other{
-
-    }
-    
-    .tablet-other{
-        display: none;
-    }
-    
-    .desktop-other{
-        display: none;
-
-    }
+  .desktop-other {
+    display: none;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:800px) {
-    .may-also-like{
-    
-        .all-box-item{
-            flex-direction: row;
-            gap: 1rem;
-    
-        }
-    
-        .mobile-other{
-            display: none;
-
-        }
-        
-        .tablet-other{
-            display: block;
-        }
+@media screen and (min-width: 800px) {
+  .may-also-like {
+    .all-box-item {
+      flex-direction: row;
+      gap: 1rem;
     }
-    
-    
+
+    .mobile-other {
+      display: none;
+    }
+
+    .tablet-other {
+      display: block;
+    }
+  }
 }
 
-
-
-
-
-
-
-
-@media screen and (min-width:1000px) {
-    .may-also-like{
-
-
-
-        .tablet-other{
-            display: none;
-        }
-
-        .desktop-other{
-            display: block;
-        }
+@media screen and (min-width: 1000px) {
+  .may-also-like {
+    .tablet-other {
+      display: none;
     }
-    
-    
+
+    .desktop-other {
+      display: block;
+    }
+  }
 }

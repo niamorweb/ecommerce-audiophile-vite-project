@@ -57,11 +57,10 @@ p {
 a {
 }
 
-
 .backgroundOpacity {
   z-index: 2;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.650);
+  background-color: rgba(0, 0, 0, 0.65);
   height: 100vh;
   width: 100vw;
   top: 0;
@@ -77,15 +76,18 @@ button {
   max-width: 200px;
   padding: 10px 25px;
   border-radius: 3px;
-
-  &:hover{
-    filter: brightness(105%);
-  }
+  transition: 0.3s;
 }
 
 .btn-style1 {
   background-color: #d87d4a;
   color: $white;
+
+  &:hover {
+    outline: 2px solid #d87d4a;
+    background-color: transparent;
+    color: $orange;
+  }
 }
 
 .btn-style2 {
@@ -93,7 +95,7 @@ button {
   color: $white;
 }
 
-.btn-style2 {
+.btn-style3 {
   background-color: $lightGrey;
   color: $black;
 }
@@ -120,7 +122,7 @@ main {
   max-width: 1100px;
 }
 
-.orange{
+.orange {
   color: $orange;
 }
 

@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 
 import About from "../../components/about/About";
 import Footer from "../../components/footer/Footer";
@@ -19,10 +19,8 @@ export default function Product({
 
   //   const {NameCategory} = useParams()
 
-
   return (
     <>
-
       <main className="main-product">
         <PresentationProduct
           dataProduct={dataProduct}
@@ -34,7 +32,9 @@ export default function Product({
           quantityCartItem={quantityCartItem}
           setQuantityCartItem={setQuantityCartItem}
         />
-        <Categories />
+        <div className="main-product__container_categories">
+          <Categories />
+        </div>
         <About />
       </main>
     </>
